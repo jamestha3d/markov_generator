@@ -5,9 +5,9 @@ from markov.utils import load_text, stream_train
 
 def main():
     """ 
-        python main.py --train big.txt --stream --order 2 --save model.pkl
-        python main.py --load model.pkl --generate "the cat"  --length 100
-        python main.py --train corpus.txt --generate "once upon"
+        Train: python main.py --train text/mobydick.txt --stream --order 2 --save model.pkl
+        Generate: python main.py --load model.pkl --generate "the cat"  --length 100
+        Train & Generate: python main.py --train text/war_and_peace.txt --generate "once upon"
 
     """
     parser = argparse.ArgumentParser(description="Markov Chain Text Generator")
